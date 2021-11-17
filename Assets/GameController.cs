@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] private PlayerController player;
     [SerializeField] private LevelController level;
     [SerializeField] private Text scoreObject;
-    [SerializeField] private float difficulty;
+    public float difficulty;
 
     private int score;
 
@@ -18,9 +14,8 @@ public class GameController : MonoBehaviour
         Reset();
     }
 
-    void Reset()
+    public void Reset()
     {
-        player.Reset();
         level.Reset();
 
         difficulty = 0;
@@ -34,11 +29,13 @@ public class GameController : MonoBehaviour
         scoreObject.text = score.ToString();
     }
 
-    public void PlayerSucceed() {
+    public void PlayerSucceed()
+    {
         SetScore(score += 100);
     }
 
-    public void PlayerFailed() {
+    public void PlayerFailed()
+    {
         Reset();
     }
 }

@@ -52,10 +52,11 @@
     <UnityVersion>2020.1.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\LevelController.cs" />
-    <Compile Include="Assets\GameController.cs" />
     <Compile Include="Assets\SpawnerController.cs" />
+    <Compile Include="Assets\LevelController.cs" />
+    <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\GameController.cs" />
+    <Compile Include="Assets\Destroyer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
